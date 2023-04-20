@@ -24,11 +24,11 @@ requirements:
   build:
     - {{ posix }}zip               # [win]
   host:
-    - r-base
+    - r-base {{ r_version }}
     - r-r6
     - r-processx >=3.4.0
   run:
-    - r-base
+    - r-base {{ r_version }}
     - r-r6
     - r-processx >=3.4.0
 
